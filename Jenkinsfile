@@ -1,11 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Version check') {
+    stage('firstbuild') {
       steps {
-        sh '''java -version
-mvn -v
-git --version'''
+        echo 'Welcome to LOIT'
       }
     }
 
